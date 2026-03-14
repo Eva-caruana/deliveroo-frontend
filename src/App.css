@@ -6,8 +6,6 @@
 }
 body {
   font-size: 14px;
-
-  width: 0 auto;
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -76,6 +74,14 @@ header img {
   display: flex;
 }
 
+.food-payment-category {
+  display: flex;
+  gap: 30px;
+  background-color: #f3f5f5;
+  padding-bottom: 25px;
+}
+
+/* articles */
 .block-category {
   display: flex;
   justify-content: flex-start;
@@ -112,13 +118,6 @@ header img {
   display: flex;
 }
 
-.food-payment-category {
-  display: flex;
-  gap: 30px;
-  background-color: #f3f5f5;
-  padding-bottom: 25px;
-}
-
 .meal-picture > img {
   width: 130px;
   height: 130px;
@@ -136,33 +135,129 @@ header img {
   padding: 15px;
 }
 
-.payment-column > p {
-  color: black;
-  font-size: 17px;
+/* EMPTY BASKET */
 
+.basket-title-empty {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #868a8a;
+  font-weight: bold;
+  background-color: #bac3c3;
+  height: 50px;
+  width: 330px;
+  border-radius: 7px;
+  border: none;
+  font-size: 18px;
+}
+.empty-basket {
 }
 
+.empty-basket p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #868a8a;
+  padding-top: 30px;
+}
+
+/* Basket bloc */
 .payment-column {
-  min-width: 350px;
-  height: 190px;
   background-color: white;
   margin-top: 30px;
   padding: 10px;
   border-radius: 10px;
+  position: sticky;
+  top: 20px;
+  width: 350px;
+  min-height: 150px;
+
   .basket-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
     background-color: #02cdbd;
     height: 50px;
     width: 330px;
     border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h3 {
-      color: white;
-      font-weight: bold;
-    }
+    border: #02cdbd 1px solid;
+    font-size: 18px;
   }
 }
 
-/* FOOTER */
+/* 1st line */
+
+.counter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  min-width: 70px;
+
+  p {
+    width: 15px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    align-items: center;
+    border: #02cdbd 2px solid;
+    background-color: white;
+  }
+}
+
+.meal-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+  min-height: 65px;
+}
+.meal-name {
+  flex: 1;
+  font-size: 16px;
+  text-align: left;
+}
+.basket-meal-price {
+  font-size: 16px;
+  min-width: 70px;
+  text-align: right;
+}
+
+.sub-total {
+  border-bottom: #868a8a 0.5px solid;
+  margin: 0 10px;
+  padding: 10px 0;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  font-size: 16px;
+  color: #2e3333;
+  border-top: #868a8a 0.5px solid;
+}
+
+.sub-total > div,
+.total > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  padding: 10px 0;
+  margin: 0 10px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 19px;
+  color: #2e3333;
+}
