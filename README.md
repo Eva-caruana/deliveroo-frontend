@@ -1,16 +1,87 @@
-# React + Vite
+# Front-end Deliveroo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+- About The Project  
+- Built With  
+- Getting Started  
+- Usage  
+- Roadmap  
+- Disclaimer  
+- Contact
 
-Currently, two official plugins are available:
+## About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a frontend application inspired by the Deliveroo platform, developed as part of Le Reacteur bootcamp.
 
-## React Compiler
+It allows users to browse restaurant menus, select meals, and manage a cart in a dynamic and interactive interface connected to a backend API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Main features:
 
-## Expanding the ESLint configuration
+- Display of restaurant categories and meals  
+- Dynamic cart management (add / remove items)  
+- Real-time total calculation  
+- Data fetching from an API  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project helped me understand how to handle complex state, manage user interactions, and structure a dynamic React application.
+
+## Built With
+
+- React  
+- Axios  
+- CSS
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js installed.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Eva-caruana/deliveroo-frontend.git
+cd deliveroo-frontend
+```
+
+Install dependencies:
+```bash
+yarn install
+```
+
+Start the development server:
+```bash
+yarn dev
+```
+
+---
+
+### Usage
+
+### Features
+
+- Display meals by category  
+- Add items to cart  
+- Remove items from cart  
+- Update quantities  
+- Calculate total price  
+- Conditional rendering of the cart
+
+## Roadmap
+
+Make it responsive
+
+## Disclaimer
+
+This project is an educational replica of the Deliveroo platform.  
+It is not affiliated with Deliveroo and has no commercial purpose.
+
+## Contact
+
+Eva Caruana  
+
+GitHub: https://github.com/Eva-caruana  
+Project: https://github.com/Eva-caruana/deliveroo-frontend.git
