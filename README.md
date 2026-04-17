@@ -1,12 +1,13 @@
 # Front-end Deliveroo
 
 ## Table of Contents
-- About The Project  
-- Built With  
-- Getting Started  
-- Usage  
-- Roadmap  
-- Disclaimer  
+
+- About The Project
+- Built With
+- Getting Started
+- Usage
+- Roadmap
+- Disclaimer
 - Contact
 
 ## About The Project
@@ -17,17 +18,17 @@ It allows users to browse restaurant menus, select meals, and manage a cart in a
 
 Main features:
 
-- Display of restaurant categories and meals  
-- Dynamic cart management (add / remove items)  
-- Real-time total calculation  
-- Data fetching from an API  
+- Display of restaurant categories and meals
+- Dynamic cart management (add / remove items)
+- Real-time total calculation
+- Data fetching from an API
 
 This project helped me understand how to handle complex state, manage user interactions, and structure a dynamic React application.
 
 ## Built With
 
-- React  
-- Axios  
+- React
+- Axios
 - CSS
 
 ---
@@ -48,11 +49,13 @@ cd deliveroo-frontend
 ```
 
 Install dependencies:
+
 ```bash
 yarn install
 ```
 
 Start the development server:
+
 ```bash
 yarn dev
 ```
@@ -63,16 +66,19 @@ yarn dev
 
 ### Features
 
-- Display meals by category  
-- Add items to cart  
-- Remove items from cart  
-- Update quantities  
-- Calculate total price  
+- Display meals by category
+- Add items to cart
+- Remove items from cart
+- Update quantities
+- Calculate total price
 - Conditional rendering of the cart
 
 ## Roadmap
 
-Make it responsive
+- Improve UI responsiveness for all screen sizes
+- Enhance basket management (better UX and state handling)
+- Add loading states and error handling for API requests
+- Optimize component structure and code readability
 
 ## Disclaimer
 
@@ -81,7 +87,7 @@ It is not affiliated with Deliveroo and has no commercial purpose.
 
 ## Contact
 
-Eva Caruana  
+Eva Caruana
 
 GitHub: https://github.com/Eva-caruana  
 Project: https://github.com/Eva-caruana/deliveroo-frontend.git

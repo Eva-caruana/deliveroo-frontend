@@ -1,3 +1,4 @@
+import "./Hero.css";
 const Hero = ({ data }) => {
   // data => c'est le data.restaurant originel
   return (

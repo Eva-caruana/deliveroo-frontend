@@ -1,3 +1,5 @@
+import "./Meal.css";
+import image from "../../assets/img/plat-generiques.avif";
 import { IoMdStar } from "react-icons/io";
 
 const Meal = ({ meal, setBasket, basket }) => {
@@ -9,7 +11,7 @@ const Meal = ({ meal, setBasket, basket }) => {
 
         //1 copy tab
         const copy = [...basket];
-        // 2 au moment de rajouter mon plat dans mon panier, je vérifie s'il n'est déjà dedans (avec l'id) :
+        // 2 si rajout mon plat dans mon panier, je vérifie s'il n'est déjà dedans (avec l'id) :
         const alreadyExist = copy.find((element) => element.id === meal.id);
         // si le plat n'est pas déjà dans le panier :
         if (alreadyExist === undefined) {
@@ -19,7 +21,7 @@ const Meal = ({ meal, setBasket, basket }) => {
           // sinon, je rajoute juste 1 à sa quantité :
           alreadyExist.quantity++;
         }
-        // 3 :
+        // 3 : copie
         setBasket(copy);
       }}
     >
@@ -41,8 +43,12 @@ const Meal = ({ meal, setBasket, basket }) => {
         </div>
       </div>
       <div className="meal-picture">
-        {/* si on a une image on l'affiche sinon on affiche pas  */}
-        {meal.picture ? <img src={meal.picture} alt="meal-picture" /> : ""}
+        {/* si on a une image on l'affiche sinon on en ajoute une générique  */}
+        {meal.picture ? (
+          <img src={meal.picture} alt="meal-picture" />
+        ) : (
+          <img src={image} alt="meal-picture" />
+        )}
       </div>
     </div>
   );

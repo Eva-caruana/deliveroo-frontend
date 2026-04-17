@@ -1,0 +1,9 @@
+/* HEADER */
+header {
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 30px;
+}
+header img {
+  width: 160px;
+  margin: 10px 0;
+}

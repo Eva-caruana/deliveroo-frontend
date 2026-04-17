@@ -1,0 +1,104 @@
+.restaurant-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  gap: 50px;
+  margin-bottom: 30px;
+  height: 260px;
+}
+
+.restaurant-info-picture img {
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.restaurant-info-bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.text-info > p {
+  font-size: 19px;
+  color: #868a8a;
+  line-height: 29px;
+}
+.restaurant-info-picture {
+  display: flex;
+}
+
+/* Respnsive */
+/* ================= TABLETTE ================= */
+@media (max-width: 1024px) {
+  .restaurant-info {
+    gap: 30px;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .restaurant-info-picture img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .restaurant-info-bloc {
+    gap: 30px;
+  }
+
+  .text-info > p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .restaurant-info {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .restaurant-info-bloc {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .restaurant-info-picture {
+    width: 100%;
+  }
+
+  .restaurant-info-picture img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .text-info > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* ================= PETIT MOBILE ================= */
+@media (max-width: 480px) {
+  .restaurant-info {
+    padding: 15px 0;
+  }
+
+  .restaurant-info-picture img {
+    height: 180px;
+  }
+
+  .text-info > p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

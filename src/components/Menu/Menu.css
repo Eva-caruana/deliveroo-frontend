@@ -1,0 +1,32 @@
+.food-payment-category {
+  display: flex;
+  gap: 30px;
+  background-color: #f3f5f5;
+  padding-bottom: 25px;
+  align-items: flex-start;
+}
+
+.food-category {
+  display: flex;
+}
+
+/* =============Responsive======== */
+@media (max-width: 1024px) {
+  .food-payment-category {
+    display: block;
+  }
+
+  .food-category {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .food-payment-category {
+    display: block;
+  }
+
+  .food-category {
+    display: block;
+  }
+}

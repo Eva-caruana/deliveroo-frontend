@@ -1,0 +1,21 @@
+/* articles */
+.block-category {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* =============responsive======= */
+@media (max-width: 1024px) {
+  .block-category {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-category {
+    width: 100%;
+    gap: 15px;
+  }
+}

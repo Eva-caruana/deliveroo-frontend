@@ -1,4 +1,5 @@
-import Meal from "./Meal";
+import Meal from "../../components/Meal/Meal";
+import "./Category.css";
 
 const Category = ({ category, setBasket, basket }) => {
   return (

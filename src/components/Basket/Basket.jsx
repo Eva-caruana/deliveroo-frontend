@@ -1,3 +1,5 @@
+import "./Basket.css";
+
 const Basket = ({ basket, setBasket }) => {
   // calcul du total de la commande
   const calculatingTotal = (tab) => {
@@ -7,9 +9,11 @@ const Basket = ({ basket, setBasket }) => {
     }
     return result.toFixed(2);
   };
+
   return (
     <section className="payment-column">
       {/* si le panier est vide */}
+
       {basket.length === 0 ? (
         <div className="empty-basket">
           <button className="basket-title-empty">Valider mon panier</button>

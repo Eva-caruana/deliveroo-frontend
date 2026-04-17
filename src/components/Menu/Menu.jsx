@@ -1,12 +1,8 @@
-import Basket from "./Basket";
-import Category from "./Category";
-import { useState } from "react";
+import "./Menu.css";
+import Basket from "../Basket/Basket";
+import Category from "../Category/Category";
 
-const Menu = ({ data }) => {
-  const [basket, setBasket] = useState([]);
-
-  // data => data.categories originel !
-
+const Menu = ({ data, basket, setBasket }) => {
   return (
     <div className="food-payment-category">
       <div className="container">
@@ -26,9 +22,7 @@ const Menu = ({ data }) => {
             })}
           </div>
 
-          <div>
-            <Basket basket={basket} setBasket={setBasket} />
-          </div>
+          <Basket basket={basket} setBasket={setBasket} />
         </section>
       </div>
     </div>
